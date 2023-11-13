@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="text-c">
+        <div class="item" id="item1">
+          <h1>product1</h1>
+      
+          <img src="1.jpg" alt="" width="200px" height="200px" >
+          <br>
+          <h2 class="price">10.00</h2>
+          <h2>Item 1</h2>
+          <p> <h3 id="quantity1">1</h3></p>
+          <button onclick="updateCart(1, false)">+</button>
+          <button onclick="updateCart(1, true ,event)">-</button>
+          <button onclick="btnremove(event)" id="btnremove">remove</button>
+          <div onclick="like(event)" class="heart" style="color: red;  ">❤</div>
+        </div>
+      
+        <div class="item" id="item2">
+          <h1>product2</h1>
+      
+          <img src="2.jpg" alt="" width="200px" height="200px" >
+          <br>
+          <h2 class="price">20.00</h2>
+          <h2>Item 2</h2>
+          <p> <h3 id="quantity2">1</h3></p>
+          <button onclick="updateCart(2, false)">+</button>
+          <button onclick="updateCart(2, true,event)">-</button>
+          <button onclick="btnremove(event)" id="btnremove">remove</button>
+          <div onclick="like(event)" class="heart" style="color: red;  ">❤</div>
+
+        </div>
+      
+        <div class="item" id="item3">
+          <h1>product3</h1>
+      
+          <img src="3.jpg" alt="" width="200px" height="200px" >
+          <br>
+          <h2 class="price">30.00</h2>
+          <h2>Item 3</h2>
+           <h3 id="quantity3">1</h3>
+          <button onclick="updateCart(3, false )">+</button>
+          <button onclick="updateCart(3, true,event)">-</button>
+          <button onclick="btnremove(event)" id="btnremove">remove</button>
+          <div onclick="like(event)" class="heart" style="color: red;  ">❤</div>
+        </div>
+      
+      </div>
+      
+      <div id="total" style="margin-left: 400px;">
+          <h2>Total Price: $<span id="totalPrice">0</span></h2>
+        </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
